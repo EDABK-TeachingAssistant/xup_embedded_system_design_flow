@@ -16,7 +16,7 @@ This file points out some notes when using ZCU104 board.
 
 2.	Block Design final result:
     <p align="center">
-    <img src ="notes\pics\2_BlockDesignResult_zcu104.png" width="80%" height="80%"/>
+    <img src ="notes\pics\2_BlockDesignResult_zcu104.png" width="60%" height="60%"/>
     </p>
     <p align = "center">
     <i>Block Design</i>

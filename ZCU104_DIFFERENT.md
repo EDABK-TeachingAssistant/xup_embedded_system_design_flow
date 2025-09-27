@@ -1,7 +1,7 @@
+This file has written by Nguyen Kien K66-EDABK. Thank you ^_^
 # Differences between ZCU104 and PYNQ-Z2
 
 ## Objectives
-
 This file points out some notes when using ZCU104 board.
 
 ## Lab 1

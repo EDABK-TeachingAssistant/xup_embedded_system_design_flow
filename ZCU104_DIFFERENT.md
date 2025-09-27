@@ -1,12 +1,12 @@
-# Differences between ZC702 and PYNQ-Z2
+# Differences between ZCU104 and PYNQ-Z2
 
 ## Objectives
 
-This file points out some notes when using ZC702 board.
+This file points out some notes when using ZCU104 board.
 
 ## Lab 1
 
-1.	Select UART1 when customizing Zynq7 Processing System. It is stated in **page 34** of [ZC702 User Guide](notes/refs/ug850-zc702-eval-bd-1596187.pdf)
+1.	Select UART1 when customizing Zynq MPSoC Processing System. It is stated in **page 34** of [ZCU104 User Guide](notes\refs\ug1267-zcu104-eval-bd.pdf)
     <p align="center">
     <img src ="notes/pics/1_SelectUART.jpg" width="80%" height="80%"/>
     </p>

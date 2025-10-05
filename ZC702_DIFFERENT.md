@@ -1,5 +1,11 @@
 # Differences between ZC702 and PYNQ-Z2
 
+- [Differences between ZC702 and PYNQ-Z2](#differences-between-zc702-and-pynq-z2)
+  - [Objectives](#objectives)
+  - [Lab 1](#lab-1)
+  - [Lab 2](#lab-2)
+  - [Lab 3](#lab-3)
+
 ## Objectives
 
 This file points out some notes when using ZC702 board.
@@ -58,3 +64,29 @@ This file points out some notes when using ZC702 board.
 4. When running code in hardware via Vitis, if Vitis Serial Terminal does not show anything:
     - For Linux users, restart Vitis Classic under `sudo` right: `sudo vitis --classic`
     - Check if USB-to-UART cable driver has been installed
+
+## Lab 3
+
+1. When editting `led_ip_slave_lite_v1_0_S_AXI.v`, just copy the content of [{sources}/lab3/led_ip_slave_lite_v1_0_S_AXI.v](sources/lab3/led_ip_slave_lite_v1_0_S_AXI.v)
+
+2. In the **Add or Create Constraints** step, select the [lab3_zc702.xdc](sources/lab3/lab3_zc702.xdc) in `{sources}/lab3` folder
+   - Notice that in lab3_zc702.xdc, each ***LED pin in Block Design*** is assigned to a ***Zc702 physical package pin***. These package pins can be found in **page 47** of [ZC702 User Guide](notes/refs/ug850-zc702-eval-bd-1596187.pdf)
+  
+    <p align="center">
+    <img src ="notes/pics/lab3/1_ListOfUserLED.png" width="80%" height="80%"/>
+    </p>
+    <p align = "center">
+    <i>List of User LED on Zc702. You can use whatever LED you want</i>
+    </p>
+
+    - In order to assign ***LED pin in Block Design*** to other ***Zc702 physical package pin*** (which means you will create your own `lab3_zc702.xdc` file), follow these steps:
+      - Open **I/O Planning** layout as guided in Lab 2 (Lab 2, section `Make GPIO Peripheral Connections External`, step 10)
+      - Expand the ***LED pin in Block Design***, then assign the ***Package Pin*** and ***IO Standard*** as stated in `ZC702 User Guide`, page 47
+      - Press Ctrl+S to save it as `.xdc` file
+
+    <p align="center">
+    <img src ="notes/pics/lab3/2_IOPlanning.png" width="80%" height="80%"/>
+    </p>
+    <p align = "center">
+    <i>Assign package pin and IO standard</i>
+    </p>

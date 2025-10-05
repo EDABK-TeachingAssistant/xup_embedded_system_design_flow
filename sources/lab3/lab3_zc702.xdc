@@ -1,0 +1,8 @@
+set_property IOSTANDARD LVCMOS25 [get_ports {LED[3]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {LED[2]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {LED[1]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {LED[0]}]
+set_property PACKAGE_PIN E15 [get_ports {LED[0]}]
+set_property PACKAGE_PIN D15 [get_ports {LED[1]}]
+set_property PACKAGE_PIN W17 [get_ports {LED[2]}]
+set_property PACKAGE_PIN W5 [get_ports {LED[3]}]

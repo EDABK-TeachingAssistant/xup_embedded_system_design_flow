@@ -5,6 +5,7 @@
   - [Lab 1](#lab-1)
   - [Lab 2](#lab-2)
   - [Lab 3](#lab-3)
+  - [Lab 4](#lab-4)
 
 ## Objectives
 
@@ -90,3 +91,7 @@ This file points out some notes when using ZC702 board.
     <p align = "center">
     <i>Assign package pin and IO standard</i>
     </p>
+
+## Lab 4
+
+1. If you see the Vitis Serial Terminal stop printing button and switch status, and the LED does not turn on, make sure you have corrected the file `led_ip_slave_lite_v1_0_S_AXI.v` in Lab 3 as mentioned above.
